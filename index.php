@@ -39,6 +39,10 @@ echo "<!DOCTYPE html><html lang='en'>";
 echo "<head> <link rel=\"canonical\" href=\"https://getbootstrap.com/docs/5.2/examples/sign-in/\">  </head> <link href=\"https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT\" crossorigin=\"anonymous\">" ;
 echo "<form name='question_form' class='form text-center container' method='POST'>";
 
+echo "<div class='text-center'>";
+echo '<h1 class="mt-5"> Выбор квартиры </h1>';
+echo "Выберите варианты ответов, которые соответствуют вашим предпочтениям при поиске квартиры. В результате будет представлен список вариантов с вероятность, согласно которой вам подходит тот или иной вариант<br><br><br>";
+
 $count=0;
 foreach($questions as $question=>$answers){
     output($count, $question,$answers);
